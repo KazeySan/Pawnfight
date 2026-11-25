@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <link rel="stylesheet" href="pieces.css">
+    </link>
+    <script src="grid.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.29.0/full/pyodide.js"></script>
+
+
+    <title>Prototype</title>
+
+</head>
+<h1 class="name">PAWNFIGHT!</h1>
+
+<body>
+    <div class="grid">
+        <table>
+            <tr>
+                <td id="a1"></td>
+                <td id="b1"><span class="piece wpiece wking" data-type="wking">♚</span></td>
+                <td id="c1"></td>
+                <td id="d1"></td>
+                <td id="e1"></td>
+            </tr>
+            <tr>
+                <td id="a2"><span class="piece wpiece wpawn" data-type="wpawn">♟</span></td>
+                <td id="b2"><span class="piece wpiece wpawn" data-type="wpawn">♟</span></td>
+                <td id="c2"></td>
+                <td id="d2"></td>
+                <td id="e2"><span class="piece wpiece wpawn" data-type="wpawn">♟</span></td>
+            </tr>
+            <tr>
+                <td id="a3"></td>
+                <td id="b3"></td>
+                <td id="c3"></td>
+                <td id="d3"></td>
+                <td id="e3"></td>
+            </tr>
+            <tr>
+                <td id="a4"><span class="piece bpiece bpawn" data-type="bpawn">♟</span></td>
+                <td id="b4"></td>
+                <td id="c4"></td>
+                <td id="d4"><span class="piece bpiece bpawn" data-type="bpawn">♟</span></td>
+                <td id="e4"><span class="piece bpiece bpawn" data-type="bpawn">♟</span></td>
+            </tr>
+            <tr>
+                <td id="a5"></td>
+                <td id="b5"></td>
+                <td id="c5"><span class="piece bpiece bking" data-type="bking">♔</span></td>
+                <td id="d5"></td>
+                <td id="e5"></td>
+            </tr>
+        </table>
+        <div class="rules">
+            <h2 class="rulesheader">Rules</h2>
+            <ul class="rulescontent">
+                <li>Rule 1: Pawns can only move forward one square at a time</li>
+                <br>
+                <li>Rule 2: Pawns capture diagonally.</li>
+                <br>
+                <li>Rule 3: Kings can move one square in any direction.</li>
+                <br>
+                <li>Rule 4: When a pawn reaches the opposite end of the board and cannot be captured,you win the game
+                </li>
+                <li>Rule 5: If your king is in check, you MUST move your king</li>
+            </ul>
+            <h2 class="rulesheader">Tips</h2>
+            <ul class="rulescontent">
+                <li>Move the king to the center to help your pawns!</li>
+            </ul>
+        </div>
+    </div>
+</body>
