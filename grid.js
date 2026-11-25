@@ -144,7 +144,7 @@ function computerMove() {
 
     let move = find_best_move(
         pyodide.toPy(board),
-        5
+        7
     );
     console.log("AI CHOSE:", move);
 
