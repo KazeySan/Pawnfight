@@ -78,7 +78,7 @@ td:hover {
     background-color: rgb(255, 204, 183);
 }
 
-.disclaimer{
+body h1.disclaimer{
     width: 100%;
     color: white !important;
 }
